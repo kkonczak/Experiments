@@ -2,6 +2,6 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs
-/BenchmarkDotNetTests/BenchmarkDotNetTests/.vs/BenchmarkDotNetTests
-/BenchmarkDotNetTests/BenchmarkDotNetTests/BenchmarkTest1/bin/Release/net7.0
+.vs
+bin/
+obj/
