@@ -2,7 +2,7 @@
 <html lang='en'>
 <head>
 <meta charset='utf-8' />
-<title>AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest-20231030-221601</title>
+<title>AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest-20231030-225532</title>
 
 <style type="text/css">
 	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
@@ -14,19 +14,19 @@
 <body>
 <pre><code>
 BenchmarkDotNet v0.13.9+228a464e8be6c580ad9408e98f18813f6407fb5a, Windows 8.1 (6.3.9600.0)
-Unknown processor
+Intel Core i5-3210M CPU 2.50GHz (Ivy Bridge), 1 CPU, 4 logical and 2 physical cores
 Frequency: 2435873 Hz, Resolution: 410.5304 ns, Timer: TSC
 .NET SDK 7.0.103
-  [Host]     : .NET 7.0.3 (7.0.323.6910), X64 RyuJIT AVX
+  [Host]     : .NET 7.0.3 (7.0.323.6910), X64 RyuJIT AVX [AttachedDebugger]
   DefaultJob : .NET 7.0.3 (7.0.323.6910), X64 RyuJIT AVX
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method   </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Code Size</th><th>Gen0</th><th>Allocated</th>
+<thead><tr><th>Method   </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Code Size</th><th>Gen0</th><th>Allocated</th>
 </tr>
-</thead><tbody><tr><td>ForeachSumAsync</td><td>386.79 &mu;s</td><td>7.527 &mu;s</td><td>8.960 &mu;s</td><td>388.40 &mu;s</td><td>447 B</td><td>458.9844</td><td>720040 B</td>
-</tr><tr><td>ForeachSum</td><td>65.88 &mu;s</td><td>1.226 &mu;s</td><td>2.937 &mu;s</td><td>64.73 &mu;s</td><td>227 B</td><td>-</td><td>40 B</td>
+</thead><tbody><tr><td>ForeachSumAsync</td><td>419.48 &mu;s</td><td>8.354 &mu;s</td><td>10.565 &mu;s</td><td>447 B</td><td>458.9844</td><td>720040 B</td>
+</tr><tr><td>ForeachSum</td><td>66.16 &mu;s</td><td>1.285 &mu;s</td><td>1.529 &mu;s</td><td>227 B</td><td>-</td><td>40 B</td>
 </tr></tbody></table>
 </body>
 </html>

@@ -12,7 +12,7 @@
        mov       [rsp+20],rcx
        mov       dword ptr [rsp+30],0FFFFFFFF
        lea       rcx,[rsp+20]
-       call      qword ptr [7FFA13879120]; System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[[AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest+<ForeachSumAsync>d__1, AsyncMethodInForeach]](<ForeachSumAsync>d__1 ByRef)
+       call      qword ptr [7FFA138A9120]; System.Runtime.CompilerServices.AsyncMethodBuilderCore.Start[[AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest+<ForeachSumAsync>d__1, AsyncMethodInForeach]](<ForeachSumAsync>d__1 ByRef)
        mov       rax,[rsp+38]
        test      rax,rax
        je        short M00_L01
@@ -21,7 +21,7 @@ M00_L00:
        ret
 M00_L01:
        lea       rcx,[rsp+38]
-       call      qword ptr [7FFA13877ED0]
+       call      qword ptr [7FFA138A7ED0]
        jmp       short M00_L00
 ; Total bytes of code 86
 ```
@@ -48,7 +48,7 @@ M02_L00:
        pop       rsi
        ret
 M02_L01:
-       call      qword ptr [7FFA1387B1F8]
+       call      qword ptr [7FFA138AB1F8]
        jmp       short M02_L00
 ; Total bytes of code 46
 ```
@@ -62,7 +62,7 @@ M02_L01:
        mov       [rbp-30],rsp
        mov       rsi,rcx
        cmp       [rsi],sil
-       mov       rcx,7FFA13394C08
+       mov       rcx,7FFA133C4C08
        mov       edx,2D1
        call      CORINFO_HELP_GETSHARED_GCTHREADSTATIC_BASE
        mov       rax,[rax+18]
@@ -76,7 +76,7 @@ M03_L00:
        mov       rcx,[rax+10]
        mov       [rbp-28],rcx
        mov       rcx,rsi
-       call      qword ptr [7FFA13879018]; AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest+<ForeachSumAsync>d__1.MoveNext()
+       call      qword ptr [7FFA138A9018]; AsyncMethodInForeach.AsyncMethodInForeachBenchmarkTest+<ForeachSumAsync>d__1.MoveNext()
        nop
        mov       rcx,[rbp-28]
        cmp       rcx,[rdi+10]
@@ -104,7 +104,7 @@ M03_L02:
 M03_L03:
        mov       rcx,rsi
        mov       rdx,[rbp-20]
-       call      qword ptr [7FFA13879318]
+       call      qword ptr [7FFA138A9318]
 M03_L04:
        nop
        add       rsp,40
@@ -113,7 +113,7 @@ M03_L04:
        pop       rbp
        ret
 M03_L05:
-       call      qword ptr [7FFA134C7210]; System.Threading.Thread.InitializeCurrentThread()
+       call      qword ptr [7FFA134F7210]; System.Threading.Thread.InitializeCurrentThread()
        jmp       near ptr M03_L00
        push      rbp
        push      rdi
@@ -148,7 +148,7 @@ M03_L07:
 M03_L08:
        mov       rcx,rsi
        mov       rdx,[rbp-20]
-       call      qword ptr [7FFA13879318]
+       call      qword ptr [7FFA138A9318]
 M03_L09:
        nop
        add       rsp,30
@@ -178,18 +178,18 @@ M03_L09:
        mov       [rdi+14],ecx
        mov       dword ptr [rdi+18],2710
        mov       rcx,rdi
-       mov       r11,7FFA132A0498
+       mov       r11,7FFA132B0498
        call      qword ptr [r11]
        mov       rdi,rax
        mov       [rbp-18],rdi
        mov       rcx,rdi
-       mov       r11,7FFA132A04A0
+       mov       r11,7FFA132B04A0
        call      qword ptr [r11]
        test      eax,eax
        je        short M00_L01
 M00_L00:
        mov       rcx,rdi
-       mov       r11,7FFA132A04A8
+       mov       r11,7FFA132B04A8
        call      qword ptr [r11]
        add       esi,eax
        lea       ecx,[rax+rax*4]
@@ -197,13 +197,13 @@ M00_L00:
        lea       ecx,[rcx+rcx*4]
        lea       esi,[rsi+rcx*2]
        mov       rcx,rdi
-       mov       r11,7FFA132A04A0
+       mov       r11,7FFA132B04A0
        call      qword ptr [r11]
        test      eax,eax
        jne       short M00_L00
 M00_L01:
        mov       rcx,rdi
-       mov       r11,7FFA132A04B0
+       mov       r11,7FFA132B04B0
        call      qword ptr [r11]
        mov       eax,esi
        add       rsp,30
@@ -221,7 +221,7 @@ M00_L01:
        cmp       qword ptr [rbp-18],0
        je        short M00_L02
        mov       rcx,[rbp-18]
-       mov       r11,7FFA132A04B0
+       mov       r11,7FFA132B04B0
        call      qword ptr [r11]
 M00_L02:
        nop

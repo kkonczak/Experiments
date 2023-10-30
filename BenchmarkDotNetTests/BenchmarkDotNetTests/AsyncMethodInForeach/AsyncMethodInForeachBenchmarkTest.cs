@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using System.Runtime.CompilerServices;
 
 namespace AsyncMethodInForeach
 {
@@ -33,11 +34,13 @@ namespace AsyncMethodInForeach
             return result;
         }
 
+        [MethodImpl(MethodImplOptions.NoOptimization)]
         public int NonAsyncSum(int a, int b)
         {
             return a + b * 10;
         }
 
+        [MethodImpl(MethodImplOptions.NoOptimization)]
         public async Task<int> SumAsync(int a, int b)
         {
             return a + b * 10;
