@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>AsyncMethodTests.AsyncMethodsBenchmarkTest-20231030-214413</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.13.9+228a464e8be6c580ad9408e98f18813f6407fb5a, Windows 8.1 (6.3.9600.0)
+Intel Core i5-3210M CPU 2.50GHz (Ivy Bridge), 1 CPU, 4 logical and 2 physical cores
+Frequency: 2435873 Hz, Resolution: 410.5304 ns, Timer: TSC
+.NET SDK 7.0.103
+  [Host]     : .NET 7.0.3 (7.0.323.6910), X64 RyuJIT AVX
+  DefaultJob : .NET 7.0.3 (7.0.323.6910), X64 RyuJIT AVX
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method                </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Code Size</th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>ReturnFromAsyncAwaitedMethod</td><td>71.0543 ns</td><td>1.4519 ns</td><td>1.4910 ns</td><td>70.4923 ns</td><td>446 B</td><td>0.0918</td><td>144 B</td>
+</tr><tr><td>ReturnFromAsyncMethod</td><td>33.9784 ns</td><td>0.7079 ns</td><td>1.0810 ns</td><td>33.4904 ns</td><td>163 B</td><td>0.0459</td><td>72 B</td>
+</tr><tr><td>ReturnFromNormalMethod</td><td>0.0278 ns</td><td>0.0369 ns</td><td>0.0346 ns</td><td>0.0141 ns</td><td>6 B</td><td>-</td><td>-</td>
+</tr></tbody></table>
+</body>
+</html>
