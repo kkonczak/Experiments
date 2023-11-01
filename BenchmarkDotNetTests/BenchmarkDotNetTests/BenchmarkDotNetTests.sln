@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncMethodTests", "AsyncMe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncMethodInForeach", "AsyncMethodInForeach\AsyncMethodInForeach.csproj", "{ED5EC4D6-DBDA-4E77-97EC-2B4FB331004E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringConcatenationBenchmarkTest", "StringConcatenationBenchmarkTest\StringConcatenationBenchmarkTest.csproj", "{9B07FAB4-58B1-4161-B444-744BEEFF8A5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{ED5EC4D6-DBDA-4E77-97EC-2B4FB331004E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED5EC4D6-DBDA-4E77-97EC-2B4FB331004E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED5EC4D6-DBDA-4E77-97EC-2B4FB331004E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B07FAB4-58B1-4161-B444-744BEEFF8A5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B07FAB4-58B1-4161-B444-744BEEFF8A5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B07FAB4-58B1-4161-B444-744BEEFF8A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B07FAB4-58B1-4161-B444-744BEEFF8A5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
